@@ -1,5 +1,5 @@
 ###
-# Copyright (c) 2019, Peter Ajamian
+# Copyright (c) 2023, Peter Ajamian & John R. Dennison
 # All rights reserved.
 #
 # Redistribution and use in source and binary forms, with or without
