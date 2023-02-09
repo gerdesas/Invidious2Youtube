@@ -34,15 +34,15 @@ import subprocess
 import re
 try:
     from supybot.i18n import PluginInternationalization
-    _ = PluginInternationalization('Invideous2Youtube')
+    _ = PluginInternationalization('Invidious2Youtube')
 except ImportError:
     # Placeholder that allows to run the plugin on a bot
     # without the i18n module
     _ = lambda x: x
 
 
-class Invideous2Youtube(callbacks.Plugin):
-    """Reformats invideous links to standard youtube links."""
+class Invidious2Youtube(callbacks.Plugin):
+    """Reformats invidious links to standard youtube links."""
     threaded = True
 
     # Data for various invidious services.  The key must be the lowercase domain
@@ -68,13 +68,13 @@ class Invideous2Youtube(callbacks.Plugin):
             for url in utils.web.httpUrlRe.findall(text):
                 if not utils.web.getDomain(url).lower() in self.services:
                     continue
-                invideous = self.services[utils.web.getDomain(url).lower()]
-                if invideous:
-                    pbCode = invideous['regex'].search(url).group(1)
-                    newURL = invideous['url'] % pbCode
+                invidious = self.services[utils.web.getDomain(url).lower()]
+                if invidious:
+                    pbCode = invidious['regex'].search(url).group(1)
+                    newURL = invidious['url'] % pbCode
                     irc.reply("Standard YouTube video link is: " + newURL)
 
-Class = Invideous2Youtube
+Class = Invidious2Youtube
 
 
 # vim:set shiftwidth=4 softtabstop=4 expandtab textwidth=79:

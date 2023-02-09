@@ -31,7 +31,7 @@
 from supybot import conf, registry
 try:
     from supybot.i18n import PluginInternationalization
-    _ = PluginInternationalization('Invideous2Youtube')
+    _ = PluginInternationalization('Invidious2Youtube')
 except:
     # Placeholder that allows to run the plugin on a bot
     # without the i18n module
@@ -44,8 +44,8 @@ def configure(advanced):
     # user or not.  You should effect your configuration by manipulating the
     # registry as appropriate.
     from supybot.questions import expect, anything, something, yn
-    Invideous2Youtube = conf.registerPlugin('Invideous2Youtube', True)
+    Invidious2Youtube = conf.registerPlugin('Invidious2Youtube', True)
 
-Invideous2Youtube = conf.registerPlugin('Invideous2Youtube')
+Invidious2Youtube = conf.registerPlugin('Invidious2Youtube')
 
 # vim:set shiftwidth=4 tabstop=4 expandtab textwidth=79:

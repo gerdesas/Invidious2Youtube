@@ -29,7 +29,7 @@
 ###
 
 """
-Invideous2Youtube: Reformats invideous.com links to standard youtube links
+Invidious2Youtube: Reformats invidious.com links to standard youtube links
 """
 
 import sys
